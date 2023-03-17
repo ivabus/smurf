@@ -1,4 +1,3 @@
-use log::error;
 use std::fs::File;
 use std::io::{prelude::*, BufReader};
 
@@ -7,7 +6,7 @@ pub fn read_to_str(path: &std::path::PathBuf) -> String {
 	let file = match file {
 		Ok(data) => data,
 		Err(err) => {
-			error!("Cannot open file \"{}\"", path.display());
+			eprintln!("Cannot open file \"{}\"", path.display());
 			std::process::exit(2)
 		}
 	};
