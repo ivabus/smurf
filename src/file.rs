@@ -5,7 +5,7 @@ pub fn read_to_str(path: &std::path::PathBuf) -> String {
 	let file = File::open(&path);
 	let file = match file {
 		Ok(data) => data,
-		Err(err) => {
+		Err(_) => {
 			eprintln!("Cannot open file \"{}\"", path.display());
 			std::process::exit(2)
 		}
