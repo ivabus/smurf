@@ -1,0 +1,12 @@
+[package]
+name = "smurf"
+version = "0.1.0"
+edition = "2021"
+authors = ["Ivan Bushchik <ivabus@ivabus.dev>"]
+description = "SMall Useful Rust Functions"
+readme = "README.md"
+repository = "https://github.com/ivabus/smurf"
+license = "MIT"
+
+
+[dependencies]
