@@ -7,18 +7,20 @@
 ### IO
 
 - macros input!(T) and input_vec!(T), that could be used to simplify stdin process
-- read_file_to_str() basically reads file to string (yes.)
+- read_file_str() basically reads file to string (yes.)
+- read_file_bytes() see read_file_str()
 
 ### Shell
 
-- macros shell!() 
+- macros shell!()
+
 ## Usage
 
 Add this to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-smurf = "0.2"
+smurf = "0.3"
 ```
 
 and this to your crate root:
@@ -49,4 +51,4 @@ fn main() {
 
 ## License
 
-[MIT](LICENSE-MIT)
+[MIT](./LICENSE)
