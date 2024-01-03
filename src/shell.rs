@@ -14,7 +14,7 @@ pub struct ShellResult {
 }
 
 #[allow(dead_code)]
-fn run(command: String) -> ShellResult {
+pub fn run(command: String) -> ShellResult {
 	let mut iter = command.split_whitespace();
 	let mut current = iter.next();
 	let mut words: Vec<&str> = vec![];
